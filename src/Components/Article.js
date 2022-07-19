@@ -1,6 +1,12 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
-function Article(props) {
+class Article extends React.Component{
+    constructor(props){
+      super();
+
+    }
+    render(){
   return (
     <div>
       <Link to="/articles/">
@@ -12,10 +18,10 @@ function Article(props) {
         </h4>
       </Link>
       <h1>
-        The slug of the article is::: <b>{props.match.params.slug}</b>!
+        {/* The slug of the article is::: <b>{props.match.params.slug}</b>! */}
       </h1>
     </div>
   );
-}
+}}
 
 export default Article
